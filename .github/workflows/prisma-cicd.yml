@@ -33,4 +33,4 @@ jobs:
       - name: Run prisma deploy
         run: npm prisma:deploy
         env: 
-          DATABASE_URL: ${{ DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
