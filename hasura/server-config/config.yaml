@@ -1,5 +1,6 @@
 version: 3
 endpoint: https://cicd-hasura.hasura.app
+admin_secret: <not required>
 metadata_directory: metadata
 actions:
   kind: synchronous
