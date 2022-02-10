@@ -20,7 +20,8 @@ model Person {
 
 model Hobby {
   id            Int             @id @default(autoincrement())
-  Content       String   
+  Content       String
+  Level         Int
   person        Person @relation(fields: [personId], references: [id])
   personId Int
 }
