@@ -33,7 +33,7 @@ jobs:
 
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        env: 
-          DATABASE_URL: ${{ DATABASE_URL }}
-          run: npm prisma:deploy
+      # - name: Run a one-line script
+      #     run: npm prisma:deploy
+      #     env: 
+      #       DATABASE_URL: ${{ DATABASE_URL }}
