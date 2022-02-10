@@ -10,9 +10,9 @@ on:
       - main
       - develop
       - test
-    paths:
-      - "prisma/**"
-      - "hasura/**"
+    # paths:
+      # - "prisma/**"
+      # - "hasura/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -42,5 +42,5 @@ jobs:
       - name: Deploy Heroku metadata
         run: |
           cd hasura/server-config
-          npx hasura metadata apply --endpoint ${{ secrets.HASURA-ENDPOINT }} --admin-secret ${{ secrets.HASURA-ADMIN-SECRET}}
+          npx hasura metadata apply -- --endpoint ${{ secrets.HASURA-ENDPOINT }} -- --admin-secret ${{ secrets.HASURA-ADMIN-SECRET}}
 
