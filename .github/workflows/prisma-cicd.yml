@@ -12,7 +12,7 @@ on:
       - test
     paths:
       - "prisma/**"
-      - "heroku/**"
+      - "hasura/server-config/metadata/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
