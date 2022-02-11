@@ -42,5 +42,5 @@ jobs:
       - name: Deploy Heroku metadata
         run: |
           cd hasura/server-config
-          npx hasura metadata apply -- --endpoint ${{ secrets.HASURA-ENDPOINT }} -- --admin-secret ${{ secrets.HASURA-ADMIN-SECRET}}
+          npx hasura metadata apply -- --endpoint ${{ secrets.HASURA_ENDPOINT }} -- --admin-secret ${{ secrets.HASURA_ADMIN_SECRET }}
 
