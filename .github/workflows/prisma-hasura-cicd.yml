@@ -39,7 +39,7 @@ jobs:
         env: 
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
-      - name: Deploy Heroku metadata
+      - name: Deploy Hasura metadata
         run: |
           cd hasura/server-config
           npx hasura metadata apply --endpoint ${{ secrets.HASURA_ENDPOINT }} --admin-secret ${{ secrets.HASURA_ADMIN_SECRET }}
